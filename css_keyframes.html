@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY FRAMES</title>
+    <style>
+        div{
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            animation-name: animate--ME;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.5s;
+            animation-timing-function: ease-in;
+        }
+        @keyframes animate--ME{
+            0%{
+                background-color: blue;
+                transform: translateX(1000px);
+            }
+            100%{
+                background-color: lightpink;
+                transform: translateY(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

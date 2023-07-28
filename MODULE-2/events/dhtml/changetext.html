@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGING TEXT</title>
+</head>
+<body>
+    <h1 id="dynamicText">Hello!! World</h1>
+    <h2 id="fantasticText">Hello!! World</h2>
+    <h3 id="beautifulText">Hello!! World</h3>
+    <button onclick="changeText()">change Text</button>
+    <script>
+        function changeText() {
+            const dynamicText = document.getElementById('dynamicText');
+            dynamicText.textContent= 'Hello, Dynamic World!';
+            const fantasticText = document.getElementById('fantasticText');
+            fantasticText.textContent= 'Hello, Fantastic World!';
+            const beautifulText = document.getElementById('beautifulText');
+            beautifulText.textContent= 'Hello, Beautiful World!';
+        }
+    </script>
+</body>
+</html>
